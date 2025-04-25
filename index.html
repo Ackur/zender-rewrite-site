@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="src/assets/css/style.css" />
+
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="app-header">
+        <div class="app-header__actions">
+          <img src="img/logo.png" alt="logotype" class="app-header-logotype" />
+          <button class="app-button app-header__actions--button">
+            Products
+          </button>
+        </div>
+
+        <nav id="app-navigation" class="app-header__navigation">
+          <a href="#" class="app-header__navigation--item">NEXUS</a>
+          <a href="#" class="app-header__navigation--item">VAULT</a>
+          <a href="#" class="app-header__navigation--item">ABOUT</a>
+          <a href="#" class="app-header__navigation--item">SERVICES</a>
+          <a
+            href="#"
+            data-target-id="contact"
+            class="app-header__navigation--item"
+          >
+            CONTACT
+          </a>
+        </nav>
+      </header>
+
+      <section class="hero-section auto-blur-animation">
+        <div class="hero-vid">
+          <video
+            loop
+            autoplay
+            muted
+            plays-inline
+            class="hero-video"
+            id="hero-video"
+          >
+            <source src="videos/hero-1.mp4" type="video/mp4" />
+          </video>
+
+          <article class="hero-info">
+            <h1 class="ff-impact">REDEFINE</h1>
+            <p>Enter the Metagame<br />Unleash the Play Economy</p>
+            <button class="app-button warning">Watch Trailer</button>
+          </article>
+
+          <h1 class="gaming-text ff-impact">Gaming</h1>
+
+          <button id="hero-video-next-btn" class="next-btn">Next</button>
+        </div>
+      </section>
+
+      <section id="about-section" class="about-section">
+        <article class="about-section__info">
+          <p>Welcome to Zentry</p>
+          <h1 class="ff-impact text-gradient auto-blur-animation">
+            Discover the world's <br />
+            largest shared adventure
+          </h1>
+        </article>
+
+        <img src="img/stones.png" alt="stones image" class="stones-img" />
+        <div class="image-box full-screen-size-animation">
+          <img src="img/about.webp" alt="about section image" />
+        </div>
+        <h2>The Metagame begins—your life, now an epic MMORPG</h2>
+        <h3>
+          Zentry is the unified play layer driving attention and contribution
+          <br />
+          through cross-world AI gamification.
+        </h3>
+      </section>
+
+      <section class="info-section">
+        <h4 class="info-section--title">Into the Metagame Layer</h4>
+        <p class="info-section--description">
+          A cross-platform metagame app, Lorem ipsum <br />
+          dolor sit amet, consectetur adipisicing elit. Unde, incidunt.
+        </p>
+
+        <div class="info-cards">
+          <article class="info-cards--item auto-display-animation">
+            <h1 class="item-title ff-impact text-gradient">RADIANT</h1>
+            <p class="item-description">
+              The game of games app transforming moments across Web2 & Web3
+              titles into rewards
+            </p>
+            <video
+              src="videos/feature-1.mp4"
+              loop
+              autoplay
+              muted
+              plays-inline
+              class="item-video"
+            ></video>
+            <button class="app-button dark item-button">Coming Soon</button>
+          </article>
+
+          <article class="info-cards--item auto-display-animation">
+            <h1 class="item-title ff-impact text-gradient">Zigma</h1>
+            <p class="item-description">
+              The NFT collection merging Zentry’s IP, AI, and gaming—pushing the
+              boundaries of NFT innovation.
+            </p>
+            <video
+              src="videos/feature-2.mp4"
+              loop
+              autoplay
+              muted
+              plays-inline
+              class="item-video"
+            ></video>
+            <button class="app-button dark item-button">Coming Soon</button>
+          </article>
+
+          <article class="info-cards--item auto-display-animation">
+            <h1 class="item-title ff-impact text-gradient">Nexux</h1>
+            <p class="item-description">
+              The metagame portal uniting humans & AI to play, compete and earn,
+            </p>
+            <video
+              src="videos/feature-3.mp4"
+              loop
+              autoplay
+              muted
+              plays-inline
+              class="item-video"
+            ></video>
+            <button class="app-button dark item-button">Coming Soon</button>
+          </article>
+
+          <article class="info-cards--item auto-display-animation">
+            <h1 class="item-title ff-impact text-gradient">Azul</h1>
+            <p class="item-description">
+              The agent of agents elevating agentic AI experience to be more fun
+              and productive.
+            </p>
+            <video
+              src="videos/feature-4.mp4"
+              loop
+              autoplay
+              muted
+              plays-inline
+              class="item-video"
+            ></video>
+          </article>
+
+          <article class="info-cards--item auto-display-animation">
+            <video
+              src="videos/feature-5.mp4"
+              loop
+              autoplay
+              muted
+              plays-inline
+              class="item-video"
+            ></video>
+          </article>
+
+          <article class="info-cards--item auto-display-animation">
+            <h1 class="item-title centered ff-impact text-gradient">
+              More comming soon
+            </h1>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <article>
+          <h1 class="contact-section--title">Join Zentry</h1>
+          <p
+            class="contact-section--description ff-impact text-gradient auto-blur-animation"
+          >
+            LET’S BUILD THE <br />
+            NEW ERA OF GAMING <br />
+            TOGETHER.
+          </p>
+          <button class="app-button dark contact-section--button">
+            CONTACT US
+          </button>
+          <div class="contacts-section--images-container">
+            <img
+              src="img/swordman.webp"
+              alt="contact image"
+              class="contacts-section--image one"
+            />
+            <img
+              src="img/contact-1.webp"
+              alt="contact image"
+              class="contacts-section--image two"
+            />
+            <img
+              src="img/contact-2.webp"
+              alt="contact image"
+              class="contacts-section--image three"
+            />
+          </div>
+        </article>
+      </section>
+
+      <footer class="app-footer">
+        <p>&copy; Nova 2025. All rights reserved</p>
+
+        <ul>
+          <li>
+            <a href="#" style="--_brand-color: #c4302b">
+              <svg width="24" height="24">
+                <use href="img/icons-symbol.svg#youtube" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" style="--_brand-color: #1da1f2">
+              <svg width="20" height="20">
+                <use href="img/icons-symbol.svg#twitter" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" style="--_brand-color: #0e76a8">
+              <svg width="18" height="18">
+                <use href="img/icons-symbol.svg#linkedin" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" style="--_brand-color: #2dba4e">
+              <svg width="20" height="20">
+                <use href="img/icons-symbol.svg#github" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <a href="#" class="privacy-link">Privacy policy</a>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
