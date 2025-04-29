@@ -7,7 +7,8 @@
     <title>Gaming Website</title>
     <link rel="stylesheet" href="src/assets/css/style.css" />
 
-    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -34,7 +35,7 @@
         </nav>
       </header>
 
-      <section class="hero-section auto-blur-animation">
+      <section class="hero-section">
         <div class="hero-vid">
           <video
             loop
@@ -62,14 +63,14 @@
       <section id="about-section" class="about-section">
         <article class="about-section__info">
           <p>Welcome to Zentry</p>
-          <h1 class="ff-impact text-gradient auto-blur-animation">
+          <h1 class="ff-impact text-gradient animation-text-blur">
             Discover the world's <br />
             largest shared adventure
           </h1>
         </article>
 
         <img src="img/stones.png" alt="stones image" class="stones-img" />
-        <div class="image-box full-screen-size-animation">
+        <div class="image-box">
           <img src="img/about.webp" alt="about section image" />
         </div>
         <h2>The Metagame begins—your life, now an epic MMORPG</h2>
@@ -88,7 +89,7 @@
         </p>
 
         <div class="info-cards">
-          <article class="info-cards--item auto-display-animation">
+          <article class="info-cards--item">
             <h1 class="item-title ff-impact text-gradient">RADIANT</h1>
             <p class="item-description">
               The game of games app transforming moments across Web2 & Web3
@@ -105,7 +106,7 @@
             <button class="app-button dark item-button">Coming Soon</button>
           </article>
 
-          <article class="info-cards--item auto-display-animation">
+          <article class="info-cards--item">
             <h1 class="item-title ff-impact text-gradient">Zigma</h1>
             <p class="item-description">
               The NFT collection merging Zentry’s IP, AI, and gaming—pushing the
@@ -122,7 +123,7 @@
             <button class="app-button dark item-button">Coming Soon</button>
           </article>
 
-          <article class="info-cards--item auto-display-animation">
+          <article class="info-cards--item">
             <h1 class="item-title ff-impact text-gradient">Nexux</h1>
             <p class="item-description">
               The metagame portal uniting humans & AI to play, compete and earn,
@@ -138,7 +139,7 @@
             <button class="app-button dark item-button">Coming Soon</button>
           </article>
 
-          <article class="info-cards--item auto-display-animation">
+          <article class="info-cards--item">
             <h1 class="item-title ff-impact text-gradient">Azul</h1>
             <p class="item-description">
               The agent of agents elevating agentic AI experience to be more fun
@@ -154,7 +155,7 @@
             ></video>
           </article>
 
-          <article class="info-cards--item auto-display-animation">
+          <article class="info-cards--item">
             <video
               src="videos/feature-5.mp4"
               loop
@@ -165,7 +166,7 @@
             ></video>
           </article>
 
-          <article class="info-cards--item auto-display-animation">
+          <article class="info-cards--item">
             <h1 class="item-title centered ff-impact text-gradient">
               More comming soon
             </h1>
@@ -177,7 +178,7 @@
         <article>
           <h1 class="contact-section--title">Join Zentry</h1>
           <p
-            class="contact-section--description ff-impact text-gradient auto-blur-animation"
+            class="contact-section--description ff-impact text-gradient animation-text-blur"
           >
             LET’S BUILD THE <br />
             NEW ERA OF GAMING <br />
@@ -244,6 +245,6 @@
       </footer>
     </div>
 
-    <script type="module" src="/src/main.js"></script>
+    <script src="/src/main.js"></script>
   </body>
 </html>

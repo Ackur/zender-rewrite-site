@@ -223,6 +223,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: clip;
   @media (max-width: 1024px) {
     margin-top: 100px;
   }
@@ -310,6 +311,7 @@ body {
   width: 80%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   margin-top: 100px;
   @media (max-width: 768px) {
     width: 100%;
@@ -434,6 +436,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
   @media (max-width: 768px) {
     margin-bottom: 0;
   }
@@ -570,62 +573,6 @@ body {
 }
 
 /* ANIMATIONS */
-.auto-blur-animation {
-  @supports (animation-timeline: view()) {
-    animation: auto-blur linear both;
-    animation-timeline: view();
-  }
-}
-
-@keyframes auto-blur {
-  0% {
-    filter: blur(20px);
-  }
-  40%,
-  60% {
-    filter: blur(0);
-    transform: translateY(0px);
-    opacity: 1;
-  }
-  100% {
-    filter: blur(20px);
-    transform: translateY(-200px);
-    opacity: 0;
-  }
-}
-
-.full-screen-size-animation {
-  @supports (animation-timeline: view()) {
-    animation: full-screen-size linear both;
-    animation-timeline: view(70% 65%);
-  }
-}
-
-@keyframes full-screen-size {
-  to {
-    width: 100%;
-    height: 100svh;
-    border-radius: 0;
-  }
-}
-
-.auto-display-animation {
-  @supports (animation-timeline: view()) {
-    animation: auto-display both;
-    animation-timeline: view(70% 5%);
-  }
-}
-
-@keyframes auto-display {
-  from {
-    opacity: 0;
-    transform: translateY(200px) scale(0.3);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
 
 @keyframes animate-gradient {
   to {
